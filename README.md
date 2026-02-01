@@ -1,0 +1,1 @@
+This API is designed for creating strong and secure passwords.
