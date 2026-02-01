@@ -2,7 +2,6 @@
 from fastapi import FastAPI
 import secrets
 import string
-import random
 
 app = FastAPI()
 
@@ -20,4 +19,4 @@ def generate_password(length: int = 13):
     # Creating the full password
     password = "".join(secrets.choice(attributes) for _ in range(length))
 
-    return "".join(password)
+    return {"password": password}
